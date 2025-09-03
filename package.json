@@ -1,0 +1,9 @@
+{
+  "name": "blog-comments-api",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@libsql/client": "^0.7.0",
+    "nanoid": "^5.0.7"
+  }
+}
