@@ -1,7 +1,7 @@
 import { createClient } from "@libsql/client";
 import { nanoid } from "nanoid";
 
-const ALLOW_ORIGINS = ["https://<你的GitHub用户名>.github.io"];
+const ALLOW_ORIGINS = ["https://sh2048.github.io/blog2.0"];
 
 function cors(res, origin) {
   const allow = (origin && ALLOW_ORIGINS.includes(origin)) ? origin : ALLOW_ORIGINS[0];
@@ -42,3 +42,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "internal error" });
   }
 }
+
